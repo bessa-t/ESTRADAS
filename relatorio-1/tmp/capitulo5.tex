@@ -1,0 +1,117 @@
+% ----------------------------------------------------------
+\chapter{Detalhamento do Alinhamento Selecionado}
+% ----------------------------------------------------------
+
+\section{Cálculo da Correção dos Azimutes}
+
+Para a determinação da correção dos azimutes, considerou-se a declinação magnética inicial, a variação anual e a convergência meridiana, conforme dados disponíveis nas ortografias do Geoportal.
+
+
+
+\textbf{Dados iniciais:}
+\begin{itemize}
+	\item Declinação magnética inicial: $D_i = -21^\circ 01'24''$ (em 01/03/2010);
+	\item Variação anual: $v = -5{,}07'$ por ano;
+	\item Convergência meridiana: $\gamma = 0^\circ 43'32{,}36''$;
+	\item Data do projeto: 01/10/2027.
+\end{itemize}
+
+\subsection*{Período entre as épocas}
+O intervalo de tempo entre as duas datas é:
+\[
+T = 17{,}5852\ \text{anos}.
+\]
+
+\subsection*{Variação total da declinação}
+A variação acumulada da declinação magnética é:
+\[
+V_{\text{total}} = v \times T = -5{,}07' \times 17{,}5852 \approx -89{,}157' .
+\]
+Convertendo para graus, minutos e segundos:
+\[
+-89{,}157' = -1^\circ 29'9{,}42''.
+\]
+
+\subsection*{Declinação magnética final}
+Somando a variação total à declinação inicial, obtém-se:
+\[
+D_f = D_i + V_{\text{total}} = -21^\circ 01'24'' - 1^\circ 29'9{,}42'' = -22^\circ 30'33{,}42'' \approx -22^\circ 30'33''.
+\]
+
+\subsection*{Relação entre Norte Magnético e Norte da Quadrícula}
+Para determinar a diferença entre o Norte Magnético e o Norte da Quadrícula, adiciona-se a convergência meridiana à declinação magnética final:
+\[
+\Delta = D_f + \gamma = -22^\circ 30'33{,}42'' + 0^\circ 43'32{,}36'' \approx -21^\circ 47'01''.
+\]
+
+\subsection*{Correção a aplicar}
+Portanto, a correção angular a ser aplicada entre o Norte Magnético e o Norte da Quadrícula, referente à data do projeto (01/10/2027), é:
+\[
+\boxed{-21^\circ 47'01''}.
+\]
+
+Esse valor deve ser somado (algebricamente) aos azimutes obtidos com base no Norte da Quadrícula, de modo a convertê-los em azimutes referidos ao Norte Magnético. Ressalta-se que todos os azimutes apresentados foram calculados em relação ao Norte da Quadrícula.
+
+
+
+
+
+
+
+
+
+\begin{figure}[h]
+	
+	\includegraphics[width=0.85\textwidth]{unbtex-example/figuras/13.declinacao.png}
+	\caption{Relação entre os nortes e declinações magnéticas.}
+	\label{fig:declinacao}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+% ----------------------------------------------------------
+\section{Dados Gerais do Alinhamento}
+% ----------------------------------------------------------
+
+Os dados gerais referentes ao alinhamento em estudo encontram-se na Tabela~\ref{tab:tab_3}.
+
+\begin{table}[h]
+	
+	\caption{Dados gerais do alinhamento B.}
+	\label{tab:tab_3}
+	
+		\begin{tabular}{|l|cc|cc|cc|c|c|}
+			\hline
+			\textbf{Ponto} & \multicolumn{2}{c|}{\textbf{Coord. Absolutas}} & 
+			\multicolumn{2}{c|}{\textbf{Coord. Relativas}} & 
+			\multicolumn{2}{c|}{\textbf{Comprimento}} & 
+			\textbf{Deflexão} & \textbf{Azimute} \\ \cline{1-7}
+			& X & Y & Xr & Yr & Calculado & Medido & (G,M,S) & (G,M,S) \\ \hline
+			\textbf{PP} & 213966.9 & 8243813 & - & - & - & - & - & 159°02'24'' \\ \hline
+			\textbf{PI-1} & 214289.1 & 8242972 & 322.2153 & -841.16 & 900.762 & 900.762 & 31°47'43'' & 127°14'41'' \\ \hline
+			\textbf{PI-2} & 215304.1 & 8242200 & 1015.001 & -771.6787 & 1275.035 & 1275.035 & 24°43'53'' & 151°58'34'' \\ \hline
+			\textbf{PI-3} & 215798.8 & 8241271 & 494.7447 & -929.5503 & 1053.013 & 1053.013 & 16°46'49'' & 168°45'24'' \\ \hline
+			\textbf{PF} & 216147.9 & 8239515 & 349.0293 & -1755.771 & 1790.127 & 1790.127 & - & - \\ \hline
+	\end{tabular}
+\end{table}
+
+O detalhamento gráfico do alinhamento está apresentado na Figura~\ref{fig:detalhamento_B}.
+
+\begin{figure}[h]
+	
+	\includegraphics[width=0.85\textwidth]{unbtex-example/figuras/12.detalhamento_tracado.pdf}
+	\caption{Detalhamento do traçado B.}
+	\label{fig:detalhamento_B}
+\end{figure}
+
+
+
+

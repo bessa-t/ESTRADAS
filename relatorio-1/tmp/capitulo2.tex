@@ -1,0 +1,156 @@
+% ----------------------------------------------------------
+\chapter{Etapa de Reconhecimento - Caracterização da Diretriz}
+\label{cap:exemplos}
+% ----------------------------------------------------------
+
+
+
+
+
+A etapa de reconhecimento constitui a base para o desenvolvimento do estudo de traçado, pois permite compreender as condições físicas, ambientais e territoriais da área de interesse. Nesta fase, foram identificados e caracterizados os pontos obrigatórios de passagem e de condição, além de conduzidas análises topográficas, de relevo, de uso e ocupação do solo, restrições ambientais e elementos hidrográficos. Essas informações subsidiaram a definição da diretriz preliminar do projeto, a qual orienta o posicionamento inicial dos traçados e a tomada de decisões nas etapas seguintes. A Figura~\ref{fig:geral} apresenta a área de estudo com a diretriz adotada e os principais elementos levantados durante esta etapa.
+
+
+
+
+
+\begin{figure}[h]
+	
+	\includegraphics[width=0.85\textwidth]{unbtex-example/figuras/1.mapa_geral_pp.pdf}
+	\caption{Mapa geral da área de estudo, destacando a diretriz preliminar e os principais elementos físicos e ambientais considerados na etapa de reconhecimento. (Todos os mapas estão orientados de acordo com o norte da quadrícula.)}
+	\label{fig:geral}
+\end{figure}
+
+
+
+
+\section{Definição dos Pontos de Partida e de Chegada}
+
+
+Para o início do estudo de traçado, é fundamental a definição dos pontos de conexão 
+obrigatórios, cujas coordenadas e cotas são fixas e não podem ser alteradas. Estes pontos, 
+denominados Ponto de Partida (PP) e Ponto Final (PF), definem os limites exatos do 
+segmento rodoviário a ser projetado.
+
+As coordenadas, no sistema UTM, Zona 23L, são apresentadas na Tabela~\ref{tab:tab_1}.
+
+
+
+\begin{table}[h]
+    
+    \caption{Coordenadas dos pontos PP e PF no sistema UTM}\label{tab:tab_1}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Ponto       & \textbf{Coordenada X (m)} & \textbf{Coordenada Y (m)} & \textbf{Cota/ Elevação (m)} \\ \hline
+        \textbf{PP} & 213966.8800               & 8243813.1600              & 944.7000                    \\ \hline
+        \textbf{PF} & 216147.8700               & 8239515.0000              & 952.0000                    \\ \hline
+    \end{tabular}
+\end{table}
+
+
+A partir da definição dos pontos de partida e de chegada do traçado, procedeu-se à 
+inserção das cartas georreferenciadas no software Autodesk Civil 3D, bem como à 
+demarcação dos pontos de controle necessários para o início da análise. Nessa etapa 
+permitiu-se a consideração da topografia local para o desenvolvimento do projeto. 
+
+
+
+
+
+
+
+\section{Análise Topográfica e Caracterização do Relevo}
+
+Para esta etapa, adotaram-se três abordagens principais:
+\begin{enumerate}
+    \item Obtenção, via Civil 3D, da declividade média (\textit{slope}) da área definida como diretriz. A diretriz foi determinada com base nos parâmetros obtidos nos tópicos subsequentes.
+    \item Análise da declividade ao longo dos traçados propostos.
+    \item Avaliação da inclinação transversal dos traçados escolhidos.
+\end{enumerate}
+
+Cada abordagem é apresentada nos subtópicos a seguir.
+
+\subsection{Declividade da Diretriz}
+
+Após a análise da diretriz, foram inseridas linhas de amostragem na área correspondente no Civil 3D, delimitando-se um contorno sobre a superfície da região de interesse (Figura~\ref{fig:slope_diretriz}). O resultado obtido indicou que a diretriz possui uma declividade média de 7,85\%.
+
+\begin{figure}[h]
+    
+    \includegraphics[width=0.85\textwidth]{unbtex-example/figuras/3.mapa_declividades.pdf}
+    \caption{Mapa de declividades da diretriz obtido no Civil 3D. (Todos os mapas estão orientados de acordo com o norte da quadrícula.)}
+    \label{fig:slope_diretriz}
+\end{figure}
+
+\subsection{Declividade ao Longo dos Traçados}
+
+Para o Traçado A, foram obtidas as seguintes declividades: 3,3\%, 3,2\%, 0,8\% e 0,5\% ao longo das quatro retas analisadas.
+
+Para o Traçado B, as declividades foram: 0,3\%, 0,3\%, 1,9\%, 0,6\% e 3,1\% ao longo das cinco retas.
+
+Com base nesses valores, ambos os traçados apresentaram uma declividade média de 1,56\%.
+
+
+
+\subsection{Declividade da Seção Transversal}
+
+A partir do Civil 3D, foi possível determinar a declividade transversal ao longo das duas propostas de traçado (Figura~\ref{fig:declividade_transversal}). Os dados foram extraídos utilizando o comando \texttt{DATAEXTRACTION} e exportados para planilha \texttt{.xlsx} para análise. Com base em 75 pontos de amostragem, obteve-se uma declividade transversal média de 4,3\%.
+
+\begin{figure}[h]
+    
+	    \includegraphics[width=0.85\textwidth]{unbtex-example/figuras/4.declividades_alinhamento.pdf}
+    \caption{Inclinação transversal média ao longo dos traçados. (Todos os mapas estão orientados de acordo com o norte da quadrícula.)}
+    \label{fig:declividade_transversal}
+\end{figure}
+
+\subsection{Declividade Adotada para o Projeto}
+
+Com base nos critérios estabelecidos pelo \cite{dner1999}, e considerando o caráter subjetivo dessa classificação, foi adotada a categoria de relevo \textbf{ondulado} para os traçados propostos. Essa decisão fundamenta-se na presença de variações topográficas pontuais e significativas ao longo da área de estudo, que tornam inviável a adoção do relevo plano, conforme discutido em \cite{lee2003}.
+
+A adoção da classificação de relevo plano demandaria um volume excessivo de movimentação de terra e resultaria em maiores impactos ambientais, especialmente porque as áreas de maior declividade coincidem com zonas de preservação permanente. Além disso, o ganho obtido na rampa máxima - apenas 1,5\% de diferença entre os relevos plano e ondulado, conforme \cite{dner1999} - não justificaria os custos e as intervenções necessárias para suavizar o terreno.
+
+A Figura~\ref{fig:slope_criticos} destaca os pontos críticos de maior declividade ao longo do traçado, reforçando a adequação da classificação adotada.
+
+\begin{figure}[h]
+    
+    \includegraphics[width=0.85\textwidth]{unbtex-example/figuras/5.declividade_acentuada.png}
+    \caption{Pontos críticos de declividade ao longo do traçado.}
+    \label{fig:slope_criticos}
+\end{figure}
+
+
+% ================================================================
+\section{Avaliação do Uso e Ocupação do Solo}
+
+Os mapas de uso e ocupação do solo (\textit{LUOS}) disponíveis no Geoportal não atribuem um uso específico à área de estudo. Contudo, a análise das ortofotografias revelou o predomínio de áreas voltadas à atividade agrícola e de vegetação natural esparsa, com ocorrência pontual de edificações e ocupações consolidadas. Também foram identificadas vias não pavimentadas já existentes, algumas das quais apresentam potencial de aproveitamento parcial nas propostas de traçado, desde que restrito às vias de caráter arterial, conforme ilustrado na Figura~\ref{fig:geral}.
+
+
+
+% ================================================================
+\section{Levantamento de Restrições Ambientais}
+
+A partir da Figura~\ref{fig:restricoes_ambientais}, observa-se que a região compreendida pela diretriz apresenta predominantemente áreas destinadas à agricultura, formações savânicas e solo exposto. Também há ocorrência de formações florestais, que exigiram maior atenção durante a avaliação do terreno.
+
+Além disso, parte da área de estudo está inserida em uma \textbf{área de proteção de mananciais}, conforme informações disponíveis no Geoportal/SICAD. Ressalta-se que toda a região encontra-se em zona rural sob proteção ambiental.
+
+Os pontos críticos identificados do ponto de vista ambiental correspondem, principalmente, às \textbf{Áreas de Preservação Permanente (APPs)}, localizadas no entorno dos córregos que atravessam ou margeiam o traçado, como ilustrado na Figura~\ref{fig:hidrografia}.
+
+\begin{figure}[h]
+    
+    \includegraphics[width=0.85\textwidth]{unbtex-example/figuras/6.VEGETAÇÃO.pdf}
+    \caption{Principais restrições ambientais identificadas na área de estudo. (Todos os mapas estão orientados de acordo com o norte da quadrícula.)}
+    \label{fig:restricoes_ambientais}
+\end{figure}
+
+
+% ================================================================
+\section{Identificação de Elementos Hidrográficos e Acidentes Naturais}
+
+A área de estudo está inserida na \textbf{Bacia Hidrográfica do Ribeirão São Bartolomeu}. Os principais elementos hidrográficos estão representados na Figura~\ref{fig:hidrografia}. Destacam-se o \textbf{Córrego Malícia}, que é interceptado pelas propostas de traçado nas proximidades do ponto PP, e o \textbf{Córrego Felisberto}, próximo ao ponto PF.
+
+Do ponto de vista topográfico, esses córregos se localizam em zonas de vale, as quais devem ser evitadas tanto por motivos legais (presença de APPs), quanto por razões hidrológicas e topográficas, devido à instabilidade natural dessas áreas.
+
+\begin{figure}[h]
+    
+    \includegraphics[width=0.85\textwidth]{unbtex-example/figuras/7.hidrológico_pp.pdf}
+    \caption{Elementos hidrográficos e relevo da área de estudo. (Todos os mapas estão orientados de acordo com o norte da quadrícula.)}
+    \label{fig:hidrografia}
+\end{figure}
